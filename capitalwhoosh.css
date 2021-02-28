@@ -10,7 +10,7 @@ body {
 
 div {
 	width: 100%;
-	min-height: 500px;
+	min-height: 400px;
 	height: 100%;
 	margin: 0px;
 	padding: 25px;
@@ -37,6 +37,7 @@ div {
 	margin: 15px;
 	padding: 10px;
 	border: 1px solid #000000;
+	border-radius: 5px;
 	justify-content: center;
 	align-content: center;
 	font-size: 15px;
