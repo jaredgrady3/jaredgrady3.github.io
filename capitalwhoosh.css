@@ -5,12 +5,14 @@ body {
   align-items: center;
 	align-content: center;
 	background-color: #ffffff;
+  padding: 0px;
 }
 
 div {
-	width: 3000px;
+	width: 100%;
 	min-height: 500px;
 	height: auto;
+	margin: 0px;
 	background-image: url('UTDbackgroundJPEG.JPG');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
