@@ -9,6 +9,8 @@ body {
 
 div {
 	background-image: url('UTDbackgroundJPEG.JPG');
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
