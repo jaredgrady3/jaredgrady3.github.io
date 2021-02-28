@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
+	align-content: center;
 	background-color: #ffffff;
 }
 
@@ -25,7 +25,7 @@ br {
 }
 i {
   font-size: 20px;
-	font-family: courier,arial,helvetica;
+	font-family: arial,helvetica;
 }
 b {
   font-size: 20px;
