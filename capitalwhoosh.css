@@ -112,6 +112,8 @@ div {
 	max-height: 35px;
 	padding: 5px;
 	margin: 0px;
+	bottom: 0;
+	position: absolute;
 	background-image: none;
 	background-color: #000000;
 	
