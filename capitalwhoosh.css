@@ -13,7 +13,7 @@ div {
 	min-height: 500px;
 	height: 100%;
 	margin: 0px;
-	background-image: url('background.JPG');
+	background-image: url('background.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover; 
