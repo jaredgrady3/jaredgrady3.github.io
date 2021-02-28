@@ -7,10 +7,12 @@ body {
 	background-color: #ffffff;
 }
 
-title-bar {
+div {
+	background-image: url('UTDbackgroundJPEG.JPG');
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
+	align-content: center;
 	justify-content: center;
 }
 
