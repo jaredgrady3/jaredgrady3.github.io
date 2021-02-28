@@ -37,11 +37,11 @@ div {
 }
 
 .items-in-a-row-green {
-	width: 600px;
+	width: 700px;
 	min-height: 200px;
 	height: auto;
 	background-image: none;
-	background-color: #green;
+	background-color: #92D050;
 	margin: 15px;
 	padding: 25px;
 	border: 2px solid #000000;
@@ -73,7 +73,7 @@ div {
 	min-height: 50px;
 	height: auto;
 	background-image: none;
-	background-color: #orange;
+	background-color: #ED7D31;
 	margin: 25px;
 	padding: 10px;
 	border: 1px solid #000000;
