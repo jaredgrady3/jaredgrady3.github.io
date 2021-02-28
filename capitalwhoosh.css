@@ -1,8 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
 	background-color: #ffffff;
 }
 
@@ -10,6 +10,7 @@ title-bar {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-evenly;
 }
 
 p {
@@ -23,7 +24,7 @@ br {
 }
 i {
   font-size: 20px;
-	font: Calibri;
+	font: Arial;
 }
 b {
   font-size: 20px;
