@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 	background-color: #ffffff;
 }
 
@@ -10,7 +10,7 @@ title-bar {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 p {
@@ -24,7 +24,7 @@ br {
 }
 i {
   font-size: 20px;
-	font: Arial;
+	font-family: courier,arial,helvetica;
 }
 b {
   font-size: 20px;
