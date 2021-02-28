@@ -8,14 +8,14 @@ body {
 }
 
 div {
+	width: 100%;
+	min-height: 500px;
+	height: auto;
 	background-image: url('UTDbackgroundJPEG.JPG');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover; 
 	background-size: 100% 100%;
-	width: 100%;
-	min-height: 500px;
-	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: initial;
