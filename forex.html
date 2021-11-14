@@ -1,18 +1,85 @@
+
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="style.css">
+
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>The Weather Here</title> -->
+        <link rel="stylesheet" href="style.css">
         <title>Forex</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
     </head>
-    
+
     <!-- Nav Bar -->
-	<header>
-		<a class="page-links" href="index.html">Dashboard</a>
-		<a class="page-links" href="forex.html">Forex</a>
-		<a class="page-links" href="crypto.html">Crypto</a>
-		<a class="page-links" href="index.html"><img class="logo-navbar" src="COMEX_rectangle.png"/></a>
-		<a class="page-links" href="watchlist.html">Watchlist</a>
-		<a class="page-links" href="travel.html">Travel</a>
-		<a class="page-links" href="profile.html">Profile</a>
-	</header>
+      <header>
+        <a class="page-links" href="index.html">Dashboard</a>
+        <a class="page-links" href="forex.html">Forex</a>
+        <a class="page-links" href="crypto.html">Crypto</a>
+        <a class="page-links" href="index.html"><img class="logo-navbar" src="COMEX_rectangle.png"/></a>
+        <a class="page-links" href="watchlist.html">Watchlist</a>
+        <a class="page-links" href="travel.html">Travel</a>
+        <a class="page-links" href="profile.html">Profile</a>
+      </header>
+    
+    <body>
+        <canvas id="chart" width="400" height = "400"></canvas>
+        <script>
+        const xlabels = [];
+        const ytemps = [];
+        chartIt();
+        getData();
+       
+
+        async function chartIt(){
+            await getData();
+            const ctx = document.getElementById('chart').getContext('2d');
+            const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: xlabels,
+                datasets: [{
+                    label: 'USD/EURO',
+                    data: ytemps,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                    
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        
+        });
+        }
+
+
+            
+            async function getData() {
+                const response = await fetch('ZonAnn.Ts+dSST.csv');
+                const data = await response.text();
+                
+                const table = data.split('\n').slice(1);
+                table.forEach(row => {
+                    const columns = row.split(',');
+                    const year = columns[0];
+                    xlabels.push(year);
+                    const temp = columns[1];
+                    ytemps.push(temp);
+                    console.log(year, temp);
+                });
+
+                // const rows = data.split('\n').slice(1);
+                // console.log(year, temp);
+            }
+        </script>  
+    </body>
 </html>
+<!-- https://api.nomics.com/v1 -->
+<!-- api key: cd2511ff45ddbfb7336ec1866d1be167b813fbe0 -->
